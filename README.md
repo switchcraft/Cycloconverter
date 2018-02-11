@@ -21,15 +21,20 @@ Then the same modules may also be used in single phase cycloconverters (two modu
 BT152 Thyristor in TO220 package, datasheet: http://www.ween-semi.com/documents/BT152_SERIES.pdf
 
 ### Pulse transformer
-A pulse transformer is used to drive the thyristors. It should have a high E*t product, and high isolation voltage. Dual secondary windings will (might) allow us to use a single transformer for two thyristors.
+If a pulse transformer is used to drive the thyristors. It should have a high E*t product, and high isolation voltage. Dual secondary windings will (might) allow us to use a single transformer for two thyristors.
 
 The Murata 1000 series looks promising, or we could wind our own. If winding our own transformer, it is important to consider the isolation between primary and secondary. A small, high permeability core should be suitable.
 
 Murata 1000:
 http://datasheet.octopart.com/1002C-Murata-datasheet-7553270.pdf
 
-A possible core, that we happen to have an abundant supply of:
+A possible core alternative, that we happen to have an abundant supply of:
 http://c1170156.r56.cf3.rackcdn.com/UK_PMA_TN26_15_10-3E25_DS.pdf
+
+### Driver IC
+The MOC3051 thyristor/triac driver IC is a alternative to the pulse transformer approach.
+
+http://datasheet.octopart.com/MOC3051M-ON-Semiconductor-datasheet-95776894.pdf
 
 ### Cooling
 Heat sink for the thyristors?
